@@ -24,7 +24,7 @@ export function Home() {
     const response = await api.get(
       `search/issues?q=${
         query ? query : ""
-      }%20repo:${"souph1s"}/github-challenge-issues`
+      }%20repo:${"souph1s"}/github-challenge`
     );
     setPosts(response.data.items);
     setPostsCounter(response.data.total_count);
